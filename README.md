@@ -1,71 +1,63 @@
-
 # Jupyter Files Repository
 
-This repository is a work in progress. It will be a curated collection of Jupyter Notebooks that progress from **Python fundamentals** to **domain-specific data extraction** and **advanced data visualization**. It is designed as a structured resource for learning, experimenting, and building reproducible workflows.
+This repository is a curated collection of Jupyter Notebooks that progress from **Python fundamentals** to **domain-specific health data extraction** and **advanced visualizations**, and now extends into **LLM applications for women’s health**.
 
-* [Repository Structure](#repository-structure)
-* [Notebook Progression](#notebook-progression)
-* [Typical Workflow](#typical-workflow)
-* [Example Visuals](#example-visuals)
-* [Installation & Setup](#installation--setup)
-* [Ethics & Compliance](#ethics--compliance)
-* [Roadmap](#roadmap)
-* [Documentation Links](#documentation-links)
+It is written from the perspective of an experienced researcher and data scientist: step-by-step, reproducible, and mindful of ethics and compliance.
 
 ---
 
 ## Repository Structure
 
-| Folder / File                                                                                    | Description                                                                               |
-| ------------------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------- |
-| [`basics/`](./basics/)                                                                           | Introductory notebooks demonstrating Python fundamentals.                                 |
-| [`basics/python_basics_demo.ipynb`](./basics/python_basics_demo.ipynb)                           | Covers arithmetic, strings, collections, control flow, functions, classes, NumPy, Pandas. |
-| [`health-data/`](./health-data/)                                                                 | Domain-focused notebooks for working with health and biomedical data.                     |
-| [`health-data/pubmed_extraction_improved.ipynb`](./health-data/pubmed_extraction_improved.ipynb) | PubMed extraction in synthetic (offline) and Entrez (online) modes, with JSON packaging.  |
-| [`health-data/README_pubmed_extraction.md`](./health-data/README_pubmed_extraction.md)           | Usage guide for the PubMed extraction notebook.                                           |
-| [`visuals/`](./visuals/)                                                                         | Advanced visualization notebooks.                                                         |
-| [`visuals/advanced_visuals.ipynb`](./visuals/advanced_visuals.ipynb)                             | Matplotlib-only advanced visuals (sage/green ombre theme).                                |
-| [`LICENSE`](./LICENSE)                                                                           | Project license (MIT or CC BY recommended).                                               |
-| [`README.md`](./README.md)                                                                       | Overview of the repository (this file).                                                   |
+| Folder / File                                                                                      | Description                                                                                                                                        |
+| -------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [`basics/`](./basics/)                                                                             | Introductory notebooks covering Python fundamentals.                                                                                               |
+| [`basics/python_basics_demo.ipynb`](./basics/python_basics_demo.ipynb)                             | Walkthrough of arithmetic, strings, collections, control flow, functions, classes, NumPy, and Pandas.                                              |
+| [`health-data/`](./health-data/)                                                                   | Domain-focused notebooks for health and biomedical workflows.                                                                                      |
+| [`health-data/pubmed_extraction_improved.ipynb`](./health-data/pubmed_extraction_improved.ipynb)   | PubMed extraction in synthetic (offline) and Entrez (online) modes with JSON packaging for LLMs.                                                   |
+| [`health-data/README_pubmed_extraction.md`](./health-data/README_pubmed_extraction.md)             | Usage guide for the PubMed extraction notebook.                                                                                                    |
+| [`models/`](./models/)                                                                             | LLM-focused notebooks.                                                                                                                             |
+| [`models/Womens_Health_LLM_Model_improved.ipynb`](./models/Womens_Health_LLM_Model_improved.ipynb) | Demonstrates the use of large language models for women’s health tasks, with reproducibility and ethics checks.                                    |
+| [`visuals/`](./visuals/)                                                                           | Visualization notebooks using Matplotlib.                                                                                                          |
+| [`visuals/advanced_visuals.ipynb`](./visuals/advanced_visuals.ipynb)                               | Advanced visualizations with a sage/green ombre theme (time-series CI bands, heatmaps, ridge plots, hexbins, stacked areas, parallel coordinates). |
+| [`LICENSE`](./LICENSE)                                                                             | Project license (MIT or CC BY recommended).                                                                                                        |
+| [`README.md`](./README.md)                                                                         | This file. Repository overview and documentation.                                                                                                  |
 
 ---
 
 ## Notebook Progression
 
-| Level             | Notebooks                                                                                        | Skills Demonstrated                                                                                 |
-| ----------------- | ------------------------------------------------------------------------------------------------ | --------------------------------------------------------------------------------------------------- |
-| **Foundations**   | [`basics/python_basics_demo.ipynb`](./basics/python_basics_demo.ipynb)                           | Variables, types, control flow, collections, functions, classes, file I/O, NumPy, Pandas            |
-| **Extraction**    | [`health-data/pubmed_extraction_improved.ipynb`](./health-data/pubmed_extraction_improved.ipynb) | PubMed API access (Entrez), synthetic data simulation, caching, JSON packaging for LLMs             |
-| **Visualization** | [`visuals/advanced_visuals.ipynb`](./visuals/advanced_visuals.ipynb)                             | Matplotlib, correlation heatmaps, CI bands, ridge plots, hexbins, area charts, parallel coordinates |
+| Level                | Notebooks                                                                                          | Skills Demonstrated                                                                                                                         |
+| -------------------- | -------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Foundations**      | [`basics/python_basics_demo.ipynb`](./basics/python_basics_demo.ipynb)                             | Variables, types, control flow, collections, functions, classes, file I/O, NumPy, Pandas                                                    |
+| **Extraction**       | [`health-data/pubmed_extraction_improved.ipynb`](./health-data/pubmed_extraction_improved.ipynb)   | PubMed API access (Entrez), synthetic data simulation, caching, JSON packaging for LLMs                                                     |
+| **Visualization**    | [`visuals/advanced_visuals.ipynb`](./visuals/advanced_visuals.ipynb)                               | Matplotlib-only visuals with custom sage/green ombre theme: CI bands, heatmaps, violin and ridge plots, stacked areas, parallel coordinates |
+| **LLM Applications** | [`models/Womens_Health_LLM_Model_improved.ipynb`](./models/Womens_Health_LLM_Model_improved.ipynb) | Using large language models for women’s health data, including preprocessing, inference, and ethics safeguards                              |
 
 ---
 
 ## Typical Workflow
 
 ```
-[ Python Basics ] → [ Data Extraction ] → [ Data Cleaning ] → [ Visualization ]
+[ Python Basics ] → [ Data Extraction ] → [ Data Cleaning ] → [ Visualization ] → [ LLM Applications ]
 ```
 
-* Start with the basics notebook to reinforce core skills.
-* Move into extraction notebooks to practice working with real or simulated data sources.
-* Apply cleaning, transformation, and exploratory analysis.
-* Generate advanced visuals to interpret and present findings.
+* Reinforce fundamentals with the basics notebook
+* Explore biomedical workflows with the PubMed extraction notebook
+* Present findings with advanced, publication-quality visuals
+* Experiment with domain-specific LLM applications in women’s health
 
 ---
 
 ## Example Visuals
 
-This repository includes (or will include) advanced visualization notebooks. Typical outputs:
-
-| Visualization Type   | Use Case                                |
-| -------------------- | --------------------------------------- |
-| Line / Bar charts    | Trends over time, category comparisons  |
-| Scatter plots        | Relationships between numeric variables |
-| Heatmaps             | Correlations and matrix-style data      |
-| Box/Violin plots     | Distribution and variance insights      |
-| Ridge (joy) plots    | Layered group distributions             |
-| Hexbin density       | Dense scatter relationships             |
-| Parallel coordinates | Multivariate pattern comparison         |
+| Visualization Type        | Use Case                              |
+| ------------------------- | ------------------------------------- |
+| Time-series with CI bands | Tracking changes with uncertainty     |
+| Heatmaps                  | Correlation structures                |
+| Violin / Ridge plots      | Distribution and subgroup comparisons |
+| Hexbin scatter            | Dense relationships                   |
+| Stacked areas             | Compositional time trends             |
+| Parallel coordinates      | Multivariate comparisons              |
 
 ---
 
@@ -75,8 +67,8 @@ Create an environment and install dependencies:
 
 ```bash
 python -m venv .venv
-source .venv/bin/activate  # On Windows: .venv\Scripts\activate
-pip install -U pandas numpy requests biopython faker matplotlib jupyter
+source .venv/bin/activate   # Windows: .venv\Scripts\activate
+pip install -U pandas numpy requests biopython faker matplotlib torch transformers jupyter
 ```
 
 Launch Jupyter:
@@ -85,37 +77,27 @@ Launch Jupyter:
 jupyter notebook
 ```
 
-
 ---
 
 ## Ethics & Compliance
 
-* **No PHI/PII**: Do not include personally identifiable or health-identifying data in notebooks.
-* **NCBI Entrez**: When using PubMed extraction, set a valid email in `Bio.Entrez` and respect usage limits.
-* **Attribution**: When publishing results, cite data sources properly (PMIDs, DOIs, etc.).
+* **No PHI/PII**: All datasets must be de-identified before use.
+* **NCBI Entrez**: When using PubMed, set a valid email in `Bio.Entrez` and respect rate limits.
+* **Bias Awareness**: Women’s health data is often underrepresented; model evaluation must account for subgroup fairness.
+* **Transparency**: Document limitations and assumptions in any analysis.
 
 ---
 
 ## Roadmap
 
-| Version | Planned Additions                                                |
-| ------- | ---------------------------------------------------------------- |
-| v0.1    | Python basics demo + initial PubMed extraction notebook          |
-| v0.2    | Improved PubMed extraction with caching and JSON export          |
-| v0.3    | Advanced visualization notebooks with Matplotlib theme parity    |
-| v0.4    | Interactive visuals (Plotly, Altair) and dashboard-ready outputs |
+| Version | Planned Additions                                              |
+| ------- | -------------------------------------------------------------- |
+| v0.1    | Python basics demo + initial PubMed extraction                 |
+| v0.2    | Improved PubMed extraction with caching and JSON export        |
+| v0.3    | Advanced visualization notebooks (sage/green ombre theme)      |
+| v0.4    | Women’s Health LLM notebook with preprocessing and ethics      |
+| v0.5    | Interactive visuals (Plotly, Altair) and dashboard outputs     |
+| v0.6    | Bias detection and explainability extensions for LLM notebooks |
 
 ---
 
-## Documentation Links
-
-* Python: [https://docs.python.org/3/](https://docs.python.org/3/)
-* Virtual environments: [https://docs.python.org/3/library/venv.html](https://docs.python.org/3/library/venv.html)
-* Jupyter Notebook: [https://jupyter-notebook.readthedocs.io/](https://jupyter-notebook.readthedocs.io/)
-* NumPy: [https://numpy.org/doc/](https://numpy.org/doc/)
-* Pandas: [https://pandas.pydata.org/docs/](https://pandas.pydata.org/docs/)
-* Matplotlib: [https://matplotlib.org/stable/users/index.html](https://matplotlib.org/stable/users/index.html)
-* Biopython (Entrez): [https://biopython.org/wiki/Entrez](https://biopython.org/wiki/Entrez)
-* NCBI E-utilities (PubMed): [https://www.ncbi.nlm.nih.gov/books/NBK25501/](https://www.ncbi.nlm.nih.gov/books/NBK25501/)
-
----
